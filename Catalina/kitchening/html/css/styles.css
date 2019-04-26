@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+  font-family: sans-serif;
+  background-image: url('../images/bg-body.png');
+}
+
+p {
+  color: #555;
+}
+
+.container {
+  width: auto;
+}
+
+.toggle-nav {
+  background-color: #333;
+  margin: 20px auto;
+  color: white;
+  width: 40px;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  background: #333;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  margin: 1px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.main-footer ul li {
+  background: red;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  margin: 1px auto;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-header > img {
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  border: 2px #ccc solid;
+}
+
+.banner {
+  display: none;
+}
+
+.product {
+  margin: 10px 0;
+}
+
+.photo-container {
+   position: relative;
+}
+
+img.photo {
+ width: 100%;
+}
+
+.special {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.zoom {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: white;
+}
+
+.more {
+  text-decoration: none;
+  color: white;
+  background: #333;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media (min-width:480px) {
+  .main-header > img {
+    margin-bottom: 10px;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav a {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+
+  .vip-products {
+    overflow: hidden;
+  }
+
+  .product:nth-child(odd) {
+    margin-right: 5px;
+    float: left;
+    max-width: 48%;
+  }
+
+  .product:nth-child(even) {
+    margin-left: 5px;
+    float: right;
+    max-width: 48%;
+  }
+
+}

@@ -63,7 +63,9 @@ ul {
 .main-header > img {
   border-radius: 100%;
   display: block;
-  margin: auto;
+  margin: 15px auto;
+  width: 180px;
+  height: 180px;
   border: 2px #ccc solid;
 }
 
@@ -112,22 +114,23 @@ img.photo {
 }
 
 @media (min-width:480px) {
-  .main-header > img {
-    margin-bottom: 10px;
-  }
-
   .toggle-nav {
     display: none;
   }
 
+  .main-nav {
+
+  }
+
   .main-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-nav a {
-    margin-bottom: 10px;
     display: inline-block;
+    padding: 10px;
+    margin: 0 0 10px 0;
     font-size: 10px;
   }
 
@@ -154,6 +157,78 @@ img.photo {
     margin-left: 5px;
     float: right;
     max-width: 48%;
+  }
+
+}
+
+@media (min-width:1180px) {
+
+  .vip-products  {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .product {
+    margin: 15px 0;
+    width: 380px;
+  }
+
+body {
+  margin: 0;
+}
+
+  .container {
+    max-width: 1180px;
+    margin: auto auto 0px auto;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav li a {
+    display: flex; /* allows align-items to work below */
+    justify-content: center; /* Horizontally centers single-line elements */
+    text-align:center; /* Horizontally centers text within line-wrapped elements */
+    align-items: center; /* vertical */
+  }
+
+  .banner {
+    margin-bottom: 15px;
+  }
+
+  .main-nav {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    vertical-align: middle;
+  }
+
+  .main-footer {
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .main-footer ul {
+    display: block;
+    text-align: center;
+  }
+
+  .main-footer ul li {
+    display: inline-block;
   }
 
 }
